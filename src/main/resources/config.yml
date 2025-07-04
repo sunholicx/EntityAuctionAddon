@@ -1,0 +1,71 @@
+# Nome do subcomando para vender entidades ex.: /ah <subcomando>
+sub-command: "sellanimal"
+
+# Nome das categorias onde entidades devem aparecer
+categories:
+  - ALL
+  - ITEMS
+
+messages:
+  # Mensagem exibida quando o player tenta utilizar o comando sem passar o valor
+  # [subcomando] é substituído automaticamente pelo valor de sub-command
+  no-value: "&cUso correto: /ah [subcomando] <valor>"
+  # Mensagem exibida quando o player tenta utilizar o comando com um valor que não seja um número
+  invalid-value: "&cValor inválido"
+  # Mensagem exibida para o player quando não é encontrada nenhuma entidade ao usar o comando de venda
+  entity-not-found: "&cEntidade não encontrada, chegue mais próximo e tente novamente."
+  # Mensagem exibida para o player ao tentar vender uma entidade não permitida
+  entity-not-permitted: "&cNão é permitido leiloar este tipo de entidade."
+  # Menssagem exibida para o player ao tentar comprar uma entidade de um lugar que não é possível spawnar
+  place-not-safe-message: "&cNão foi possível realizar a compra. O local não é seguro para spawnar a entidade."
+
+entity-permissions:
+  # Lista os tipos de entidades as quais é permitida a venda
+  # Valore possíveis: Creature (Mobs passivos e neutro)
+  #                   Monster (Mobs hostis)
+  #                   All (Todos os mobs)
+  category: "Creature"
+
+  # Entidades que pertencem à categoria permiida que são excessão
+  # Coloque o tipo da entidade que deve ser filtrada
+  exceptions:
+    - CAVE_SPIDER
+    - SPIDER
+    - DROWNED
+    - ENDERMAN
+    - ZOMBIFIED_PIGLIN
+
+  # Lista de todos os mobs considerados hostis
+  hostiles:
+    - BLAZE
+    - BOGGED
+    - BREEZE
+    - CREAKING
+    - CREEPER
+    - ELDER_GUARDIAN
+    - ENDERMITE
+    - EVOKER
+    - GHAST
+    - GUARDIAN
+    - HOGLIN
+    - HUSK
+    - MAGMA_CUBE
+    - PHANTOM
+    - PIGLIN_BRUTE
+    - PILLAGER
+    - RAVAGER
+    - SHULKER
+    - SILVERFISH
+    - SKELETON
+    - SLIME
+    - STRAY
+    - VEX
+    - VINDICATOR
+    - WARDEN
+    - WITCH
+    - WITHER_SKELETON
+    - ZOGLIN
+    - ZOMBIE
+    - ZOMBIE_VILLAGER
+    - ENDER_DRAGON
+    - WITHER

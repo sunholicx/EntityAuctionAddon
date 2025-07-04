@@ -1,0 +1,7 @@
+name: EntityAuctionAddon
+main: me.sunrise.entityauctionaddon.EntityAuctionAddon
+version: 1.0
+api-version: 1.21.5
+description: Adiciona funcionalidade de leiloar animais e villagers ao plugin Player Auction.
+author: Sunrise
+depend: [PlayerAuctions, NBTAPI]
